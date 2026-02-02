@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8eef3;
+}
+
+.page {
+    background: white;
+}
+
+
+.header {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background: #f5f8fc;
+}
+
+.header-bg {
+    position: absolute;
+    inset: 0;
+    background: url("assets/HeaderBack.png") right center no-repeat;
+    background-size: 850px auto;
+    opacity: 0.4;
+}
+
+.header-inner {
+    position: relative;
+    z-index: 2;
+    padding: 30px 40px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-logo {
+    width: 180px;
+}
+
+.top-divider {
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+.top-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-item img {
+    width: 85px;
+}
+
+.label {
+    font-size: 8px;
+    font-weight: bold;
+    color: #666;
+    letter-spacing: 0.6px;
+}
+
+.title-block {
+    margin-top: 55px;
+}
+
+.title-green {
+    color: #5ba54c;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.title-black {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.title-blue {
+    color: #7ba3c0;
+}
+
+.header-front {
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    height: 320px;
+    z-index: 3;
+}
+
+
+.content {
+    padding: 30px 40px;
+}
+
+.greeting {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 14.5px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+
+.supporters,
+.partners {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 12px;
+    color: #5b9fb5;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.logo-row img {
+    height: 42px;
+}
+
+.logo-row span {
+    font-size: 26px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.logo-grid img {
+    width: 90px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+
+@media (max-width: 900px) {
+    .header {
+        height: auto;
+    }
+
+    .header-front {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .title-green,
+    .title-black {
+        font-size: 32px;
+    }
+
+    .top-bar {
+        flex-wrap: wrap;
+    }
+}
