@@ -1,0 +1,41 @@
+.titles{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman';
+}
+.container{
+    text-align: center; 
+ 
+}
+.row{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    text-align: center; 
+    
+    
+}
+.btn{
+    background-color: lightblue;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 3px;
+    border: 2px solid;
+}
+#fullform{
+    
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-center;
+
+}
+#result{
+    text-align: center;
+}
+.center{
+    text-align: center;
+    
+}
