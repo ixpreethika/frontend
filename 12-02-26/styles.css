@@ -1,0 +1,12 @@
+.card-group:hover .focus-card {
+    filter: blur(3px);
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+.card-group .focus-card:hover {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 10;
+}
