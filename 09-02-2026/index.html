@@ -1,53 +1,42 @@
 <!doctype html>
 <html>
-  <head>
-    <title>STUDENT FORM</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="titles">EVENT ENROLLMENT FORM</h1>
-      <form id="fullform">
-        <div class="row">
-          <p>Full Name:</p>
-          <input
-            type="text"
-            id="fullname"
-            placeholder="Enter your full name"
-            required
-          />
-          
-        </div>
-        <p class="errorfullname"></p>
-        <div class="row">
-          <p>Email:</p>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-        
-        </div>
-        <p class="erroremail"></p>
-        <div class="row">
-          <p>Phone:</p>
-          <input
-            type="text"
-            id="phone"
-            placeholder="Enter your phone number"
-            required
-          />
-          
-        </div>
-        <p class="errorphone"></p>
-        <button type="submit" class="btn" id="submitBtn">Submit</button>
-      </form>
-      <h2 class="details">Submitted Details</h2>
-      <div class="center">
-      <ul id="result"></ul></div>
+
+<head>
+  <title>STUDENT FORM</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="titles">EVENT ENROLLMENT FORM</h1>
+    <form id="fullform">
+      <div class="row">
+        <p>Full Name:</p>
+        <input type="text" id="fullname" placeholder="Enter your full name" required />
+
+      </div>
+      <p class="errorfullname"></p>
+      <div class="row">
+        <p>Email:</p>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+      </div>
+      <p class="erroremail"></p>
+      <div class="row">
+        <p>Phone:</p>
+        <input type="text" id="phone" placeholder="Enter your phone number" required />
+
+      </div>
+      <p class="errorphone"></p>
+      <button type="submit" class="btn" id="submitBtn">Submit</button>
+    </form>
+    <h2 class="details">Submitted Details</h2>
+    <div class="center">
+      <ul id="result"></ul>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
 <script src="form.js"></script>
